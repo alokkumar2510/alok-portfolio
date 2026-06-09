@@ -198,8 +198,8 @@ export const projects: Project[] = [
     subtitle: "3D Interactive Portfolio",
     description:
       "A futuristic, 3D interactive portfolio website built with React Three Fiber, Framer Motion, and a Graphify-optimized AI assistant chatbot.",
-    stack: ["React", "Three.js", "Framer Motion", "Node.js", "Groq", "Graphify"],
-    github: "https://github.com/aloksahu/portfolio",
+    stack: ["React", "Three.js", "Framer Motion", "Node.js", "Graphify"],
+    github: "https://github.com/alokkumar2510/alok-portfolio",
     demo: "https://alokkumarsahu.in",
     features: [
       "React Three Fiber 3D scenes",

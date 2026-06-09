@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     description: 'Building Scalable Web Experiences & Exploring the Power of AI.',
   },
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
+};
+
+export const viewport = {
   themeColor: '#020308',
 };
 
