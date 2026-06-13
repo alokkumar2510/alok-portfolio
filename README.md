@@ -1,4 +1,4 @@
-# 🌌 ALOK KUMAR SAHU — Cinematic Developer Portfolio
+# 🌌 ALOK KUMAR SAHU — Developer Portfolio
 
 <p align="center">
   <a href="https://alokkumarsahu.in" target="_blank">

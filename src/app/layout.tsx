@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: '%s · Alok Kumar Sahu',
   },
   description:
-    'Cinematic portfolio of Alok Kumar Sahu — building scalable web experiences and exploring the power of AI. B.Tech CSE, VSSUT.',
+    'Portfolio of Alok Kumar Sahu — building scalable web experiences and exploring the power of AI. B.Tech CSE, VSSUT.',
   keywords: [
     'Alok Kumar Sahu', 'Software Engineer', 'AI Builder', 'Full Stack Developer',
     'Next.js', 'Rust', 'Three.js', 'VSSUT', 'Portfolio',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Alok Kumar Sahu', url: 'https://alokkumarsahu.in' }],
   openGraph: {
     type: 'website',
-    title: 'Alok Kumar Sahu — Cinematic Developer Portfolio',
+    title: 'Alok Kumar Sahu — Software Engineer · AI Builder · Full Stack Developer',
     description: 'Building Scalable Web Experiences & Exploring the Power of AI.',
     url: 'https://alokkumarsahu.in',
     siteName: 'Alok Kumar Sahu',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     creator: '@alok_chintu',
-    title: 'Alok Kumar Sahu — Cinematic Developer Portfolio',
+    title: 'Alok Kumar Sahu — Software Engineer · AI Builder · Full Stack Developer',
     description: 'Building Scalable Web Experiences & Exploring the Power of AI.',
   },
   icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
