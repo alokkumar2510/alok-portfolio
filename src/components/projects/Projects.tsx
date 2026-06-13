@@ -44,32 +44,22 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
             }}
           />
           <div className="absolute inset-0 bg-grid opacity-30" />
-          {/* Mock UI */}
-          <div className="absolute inset-6 rounded-2xl glass p-5 flex flex-col">
-            <div className="flex items-center gap-2">
+          {/* Mock Browser UI with Live Site Iframe */}
+          <div className="absolute inset-6 rounded-2xl glass flex flex-col overflow-hidden">
+            <div className="flex items-center gap-2 px-5 py-3 border-b border-white/10 bg-white/[0.02] backdrop-blur-md">
               <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/70" />
               <span className="h-2.5 w-2.5 rounded-full bg-green-400/70" />
               <span className="ml-3 font-mono text-[10px] tracking-widest text-white/40">{p.id}.alokkumarsahu.in</span>
             </div>
-            <div className="mt-5 flex-1 grid grid-cols-3 gap-3">
-              <div className="col-span-2 rounded-lg glass p-4">
-                <p className="font-display text-xl text-white">{p.title}</p>
-                <p className="mt-2 text-[11px] text-white/50 line-clamp-3">{p.description}</p>
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {p.stack.slice(0, 4).map((s) => (
-                    <span key={s} className="px-2 py-0.5 text-[10px] font-mono rounded-full border border-white/10 text-white/60">{s}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-lg glass p-3 flex flex-col justify-between">
-                {p.metrics.map((m) => (
-                  <div key={m.label}>
-                    <p className="font-display text-lg text-white" style={{ color: p.accent }}>{m.value}</p>
-                    <p className="text-[9px] text-white/40 uppercase tracking-widest">{m.label}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="flex-1 w-full bg-[#05060d] relative overflow-hidden">
+              <iframe
+                src={p.demo}
+                title={p.title}
+                className="w-full h-full border-none bg-slate-950 opacity-90 hover:opacity-100 transition-opacity duration-300"
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-forms"
+              />
             </div>
           </div>
           {/* Glowing border */}

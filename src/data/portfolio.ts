@@ -28,7 +28,7 @@ export const socials = [
 ];
 
 export const metrics = [
-  { label: "Shipped Projects", value: 5, suffix: "+" },
+  { label: "Shipped Projects", value: 7, suffix: "+" },
   { label: "Years Building", value: 2, suffix: "+" },
   { label: "Tech Stack Keys", value: 8, suffix: "+" },
   { label: "Continuous Focus", value: 2, suffix: "" },
@@ -108,6 +108,48 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "dorm-x",
+    title: "DORM-X",
+    subtitle: "Student Housing Platform",
+    description:
+      "A comprehensive student housing and dormitory management platform. Features role-based dashboards, verified student QR wallets, real-time WebSocket communication, and an integrated AI assistant.",
+    stack: ["Next.js", "Express", "PostgreSQL", "Prisma", "Socket.io", "Tailwind CSS"],
+    github: "https://github.com/alokkumar2510/dorm-x",
+    demo: "https://dormx.alokkumarsahu.in",
+    features: [
+      "Role-based dashboards & charts",
+      "Offline-first student QR wallets",
+      "Real-time alerts via Socket.io",
+      "DORM-X AI Assistant integration",
+    ],
+    metrics: [
+      { label: "Verify Speed", value: "Instant" },
+      { label: "Realtime update", value: "<100ms" },
+    ],
+    accent: "#10B981",
+  },
+  {
+    id: "traxo",
+    title: "TRAXO",
+    subtitle: "Website Change & Monitor",
+    description:
+      "A premium, real-time website monitoring and change detection platform. Tracks visual, content, price, and PDF changes using Cloudflare Workers, providing multi-channel alerts and a glassmorphic analytics dashboard.",
+    stack: ["Next.js", "TypeScript", "Cloudflare Workers", "Firebase", "Resend API", "Telegram Bot API"],
+    github: "https://github.com/alokkumar2510/Traxo",
+    demo: "https://traxo.alokkumarsahu.in",
+    features: [
+      "Visual, Selector, Price & PDF tracking",
+      "Cloudflare Workers scanning engine",
+      "Resend & Telegram instant alerts",
+      "Side-by-side visual difference logs",
+    ],
+    metrics: [
+      { label: "Scan latency", value: "<60ms" },
+      { label: "Trackers", value: "5 Types" },
+    ],
+    accent: "#6366F1",
+  },
   {
     id: "jarvis",
     title: "Alok Jarvis OS",
